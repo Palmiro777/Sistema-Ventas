@@ -1,0 +1,97 @@
+﻿**********************
+Inicio de la transcripción de Windows PowerShell
+Hora de inicio: 20261110021050
+Nombre de usuario: DESKTOP-EAO5K4G\Matheo
+Usuario RunAs: DESKTOP-EAO5K4G\Matheo
+Nombre de la configuración: 
+Máquina: DESKTOP-EAO5K4G (Microsoft Windows NT 10.0.26200.0)
+Aplicación host: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Id. de proceso: 26924
+PSVersion: 5.1.26100.9711
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.9711
+BuildVersion: 10.0.26100.9711
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+La transcripción ha comenzado. El archivo de salida es C:\Users\Matheo\Desktop\auditoria_completa.txt
+PS C:\Users\Matheo> cd $HOME\Desktop
+PS C:\Users\Matheo\Desktop> mkdir Sistema_Ventas
+
+
+    Directorio: C:\Users\Matheo\Desktop
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        10/11/2026     02:11                Sistema_Ventas
+
+
+PS C:\Users\Matheo\Desktop> cd Sistema_Ventas
+PS C:\Users\Matheo\Desktop\Sistema_Ventas> mkdir Frontend, Backend, BaseDatos
+
+
+    Directorio: C:\Users\Matheo\Desktop\Sistema_Ventas
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        10/11/2026     02:13                Frontend
+d-----        10/11/2026     02:13                Backend
+d-----        10/11/2026     02:13                BaseDatos
+
+
+PS C:\Users\Matheo\Desktop\Sistema_Ventas> echo "Version 1.0 del Sistema de Ventas" > README.md
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="Version 1.0 del Sistema de Ventas"
+PS C:\Users\Matheo\Desktop\Sistema_Ventas> git init
+
+PS C:\Users\Matheo\Desktop\Sistema_Ventas> git add
+
+PS C:\Users\Matheo\Desktop\Sistema_Ventas> git add .
+
+PS C:\Users\Matheo\Desktop\Sistema_Ventas> git commit -m "Dia 1: Despliegue de la estructura base"
+
+PS C:\Users\Matheo\Desktop\Sistema_Ventas> git config --global user.name "Palmiro777"
+
+PS C:\Users\Matheo\Desktop\Sistema_Ventas> git config --global user.email "matheo.vazquez.gomez@gmail.com"
+
+PS C:\Users\Matheo\Desktop\Sistema_Ventas> git config user.name
+
+PS C:\Users\Matheo\Desktop\Sistema_Ventas> git config user.email
+
+PS C:\Users\Matheo\Desktop\Sistema_Ventas> git add .
+
+PS C:\Users\Matheo\Desktop\Sistema_Ventas> git commit -m "Dia 1: Despliegue de la estructura base"
+
+PS C:\Users\Matheo\Desktop\Sistema_Ventas> git remote add origin https://github.com/Palmiro777/Sistema-Ventas.git
+
+PS C:\Users\Matheo\Desktop\Sistema_Ventas> git push -u origin main
+
+PS C:\Users\Matheo\Desktop\Sistema_Ventas> echo "Conectando al servidor SQL..." > BaseDatos\conexion.ps1
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="Conectando al servidor SQL..."
+PS C:\Users\Matheo\Desktop\Sistema_Ventas> echo "Actualizacion Dia 2: Modulo DB agregado" >> README.md
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="Actualizacion Dia 2: Modulo DB agregado"
+PS C:\Users\Matheo\Desktop\Sistema_Ventas> mkdir Pruebas_Unitarias
+
+
+    Directorio: C:\Users\Matheo\Desktop\Sistema_Ventas
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        10/11/2026     02:32                Pruebas_Unitarias
+
+
+PS C:\Users\Matheo\Desktop\Sistema_Ventas> git add .
+
+PS C:\Users\Matheo\Desktop\Sistema_Ventas> git commit -m "Dia 2: Agregados scripts de DB y carpeta de pruebas"
+
+PS C:\Users\Matheo\Desktop\Sistema_Ventas> git push
+
+PS C:\Users\Matheo\Desktop\Sistema_Ventas> Stop-Transcript
+**********************
+Fin de la transcripción de Windows PowerShell
+Hora de finalización: 20261110023615
+**********************
